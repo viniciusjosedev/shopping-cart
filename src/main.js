@@ -3,16 +3,14 @@ import { fetchProductsList } from './helpers/fetchFunctions';
 import { createProductElement } from './helpers/shopFunctions';
 import './style.css';
 
-// async function teste() {
-//   const pull = await fetchProductsList('dakimura');
-//   const resultado = await pull[0].results;
-//   resultado.forEach((elemento) => {
-//     const tag = createProductElement(elemento);
-//     document.getElementsByClassName('products')[0]
-//       .appendChild(tag);
-//   });
-// }
+async function teste() {
+  const pull = await fetchProductsList('computador');
+  pull[0].results.forEach((elemento) => {
+    document.getElementsByClassName('products')[0]
+      .appendChild(createProductElement(elemento));
+  });
+}
 
-// teste();
+teste();
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
