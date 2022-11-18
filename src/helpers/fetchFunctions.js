@@ -9,7 +9,3 @@ export const fetchProductsList = async (search) => {
   const resultado = await retorno.json();
   return resultado.results;
 };
-
-fetchProductsList()
-  .then((resolve) => console.log(resolve))
-  .catch((error) => console.log(error.message));
