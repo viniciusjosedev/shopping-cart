@@ -13,7 +13,7 @@ describe('Teste a função fetchProductsList', () => {
 	it("Teste se o retorno da função fetchProductsList com o argumento 'computador' é uma estrutura de dados igual ao objeto computadorSearch, que já está importado no arquivo.", async () => {
 		expect(await fetchProductsList('computador')).toBe(computadorSearch)
 	})
-  it("Execute a função fetchProductsList com o argumento 'computador' e teste se fetch foi chamada", () => {
+  it("Teste se, ao chamar a função fetchProductsList sem argumento, retorna um erro com a mensagem: 'Termo de busca não informado'", () => {
 		return fetchProductsList().catch(error => {
 			expect(error.message).toBe('Termo de busca não informado');
 		});

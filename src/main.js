@@ -3,24 +3,31 @@ import { fetchProductsList } from './helpers/fetchFunctions';
 import { createProductElement } from './helpers/shopFunctions';
 import './style.css';
 
-function loading(param) {
+function loading(param, classe) {
   if (param === true) {
     const tagP = document.createElement('p');
-    tagP.className = 'loading';
-    tagP.innerText = 'carregando...';
+    tagP.className = classe;
+    tagP.innerText = `${classe === 'loading' ? 'carregando...'
+      : 'Algum erro ocorreu, recarregue a página e tente novamente'}`;
     return document.getElementsByClassName('products')[0]
       .appendChild(tagP);
-  } return document.getElementsByClassName('loading')[0].remove();
+  } return document.getElementsByClassName(classe)[0].remove();
 }
 
 async function search() {
-  loading(true);
-  const pull = await fetchProductsList('rx 580 4gb');
-  loading(false);
-  pull.forEach((elemento) => {
-    document.getElementsByClassName('products')[0]
-      .appendChild(createProductElement(elemento));
-  });
+  try {
+    loading(true, 'loading');
+    const pull = await fetchProductsList('computador');
+    loading(false, 'loading');
+    pull.forEach((elemento) => {
+      document.getElementsByClassName('products')[0]
+        .appendChild(createProductElement(elemento));
+    });
+  } catch (error) {
+    // console.log(error.message);
+    loading(false, 'loading');
+    loading(true, 'error');
+  }
 }
 
 search();
