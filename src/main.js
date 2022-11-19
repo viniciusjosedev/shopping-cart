@@ -1,7 +1,7 @@
 import { searchCep } from './helpers/cepFunctions';
 import { fetchProductsList, fetchProduct } from './helpers/fetchFunctions';
 import { createProductElement, createCartProductElement } from './helpers/shopFunctions';
-import { saveCartID } from './helpers/cartFunctions';
+import { saveCartID, getSavedCartIDs } from './helpers/cartFunctions';
 import './style.css';
 
 function loading(param, classe) {
@@ -15,17 +15,28 @@ function loading(param, classe) {
   } return document.getElementsByClassName(classe)[0].remove();
 }
 
-async function addCart(index) {
-  const id = document.getElementsByClassName('product__id')[index].textContent;
-  saveCartID(id);
-  document.getElementsByClassName('cart__products')[0]
-    .appendChild(createCartProductElement(await fetchProduct(id)));
+async function addCart(ids, size) {
+  if (typeof ids === 'object') {
+    const list = [];
+    for (let index = 0; index < size; index += 1) {
+      list.push(fetchProduct(ids[index]));
+    }
+    return Promise.all(list).then((resultado) => resultado.forEach((elemento) => document
+      .getElementsByClassName('cart__products')[0]
+      .appendChild(createCartProductElement(elemento))));
+  }
+  if (typeof ids === 'number') {
+    const id = document.getElementsByClassName('product__id')[ids].textContent;
+    saveCartID(id);
+    document.getElementsByClassName('cart__products')[0]
+      .appendChild(createCartProductElement(await fetchProduct(id)));
+  }
 }
 
 async function search() {
   try {
     loading(true, 'loading');
-    const pull = await fetchProductsList('redragon kumara');
+    const pull = await fetchProductsList('computador');
     loading(false, 'loading');
     pull.forEach((elemento) => {
       document.getElementsByClassName('products')[0]
@@ -43,6 +54,11 @@ async function search() {
   }
 }
 
-search();
+function init() {
+  search();
+  addCart(getSavedCartIDs(), getSavedCartIDs().length);
+}
+
+window.onload = init;
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
