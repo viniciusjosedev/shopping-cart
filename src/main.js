@@ -88,4 +88,5 @@ function init() {
 
 window.onload = init;
 
-document.querySelector('.cep-button').addEventListener('click', searchCep);
+document.querySelector('.cep-button')
+  .addEventListener('click', async () => searchCep());
