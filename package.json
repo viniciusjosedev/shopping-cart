@@ -4,7 +4,7 @@
   "description": "<!-- Olá, Tryber! Esse é apenas um arquivo inicial para o README do seu projeto. É essencial que você preencha esse documento por conta própria, ok? Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar! :warning: IMPORTANTE: você precisa deixar nítido: - quais arquivos/pastas foram desenvolvidos por você;  - quais arquivos/pastas foram desenvolvidos por outra pessoa estudante; - quais arquivos/pastas foram desenvolvidos pela Trybe. -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/viniciusjosedev/shopping-cart#readme",
   "dependencies": {
+    "jest": "^29.3.1",
     "vite": "^3.2.4"
-  }
+  },
+	"type": "module"
 }
