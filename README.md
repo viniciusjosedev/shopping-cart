@@ -1,18 +1,3 @@
-# Índice 
-
-* [Título e Imagem de capa](#Título-e-Imagem-de-capa)
-* [Badges](#badges)
-* [Índice](#índice)
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-Projeto)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
-* [Licença](#licença)
-* [Conclusão](#conclusão)
-
 <h1 align='center' id='Título-e-Imagem-de-capa'>:money_with_wings: Shopping Cart :money_with_wings: </h1>
 
 <p align='center'>
@@ -22,8 +7,8 @@
 
 ## Bradges
 
-<p align='center'>
-<img src='https://img.shields.io/badge/status-finalizado-success' width='190px'></img>
+<p align='left'>
+<img src='https://img.shields.io/badge/status-finalizado-success' width='150px'></img>
 </p>
 
 ## Descrição do projeto
@@ -36,3 +21,19 @@
 ### :heavy_check_mark: - https://api.mercadolibre.com/sites/MLB/search?q=${search};
 ### :heavy_check_mark: - https://cep.awesomeapi.com.br/json/${cep};
 ### :heavy_check_mark: - https://brasilapi.com.br/api/cep/v2/${cep};
+
+
+## :construction: Funcionalidades :construction:
+
+### Quando o usuário digitar o que quiser na barra de pesquisa, a aplicação vai fazer uma requisição a API do mercado livre, trazendo assim todos os produtos relacionados.
+### Além disso, o usuário também pode digitar o seu CEP. Ao digitar, a aplicação vai fazer uma requisição a 2 API's, a que responder primeiro será usada, mostrando a rua, bairro, cidade e estado respectivamente logo a baixo do botão 'Buscar CEP'
+
+## :computer: Tecnologias/Linguagens utilizadas :computer:
+
+### :heavy_check_mark: - HTML5, CSS6 e JS6
+### :heavy_check_mark: - Jest e Vite.
+
+## Pessoas Desenvolvedoras do Projeto.
+### Projeto realizado em conjunto com a empresa de tecnologia trybe, que foi a reponsável por fazer toda a estrutura dos arquivos do projeto, incluindo a estrutura básica da identação e estilização da página.
+### Deixando assim, um ambiente saudável para que eu pudeste desenvolver todos os testes assíncronos das funções fetchProduct.js e fetchProductsList.js, além de também desenvolver as mesmas.
+### Partes das criações das funcionalidadee de adicionar e excluir produtos também são de minha responsabilidade juntamente com toda a estrutura buscar, tratar e printar os dados de todas as API's do projeto. 
