@@ -17,6 +17,6 @@
 ### Além disso,pratiquei requisições para API's, junto com isso, veio a necessidade de tratar essas requisições como uma Promise e então encaminhar os resultados para a tela do usuário.
 ### API's usadas: 
 
-[] - https://api.mercadolibre.com/sites/MLB/search?q=${search};
-[] - https://cep.awesomeapi.com.br/json/${cep};
-[] - https://brasilapi.com.br/api/cep/v2/${cep};
+### [x] - https://api.mercadolibre.com/sites/MLB/search?q=${search};
+### [x] - https://cep.awesomeapi.com.br/json/${cep};
+### [x] - https://brasilapi.com.br/api/cep/v2/${cep};
