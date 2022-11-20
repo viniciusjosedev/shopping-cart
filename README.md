@@ -8,7 +8,7 @@
 ## Bradges
 
 <p align='left'>
-<img src='https://img.shields.io/badge/status-finalizado-success' width='150px'></img>
+<img src='https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-success' width='150px'></img>
 </p>
 
 ## Descrição do projeto
@@ -23,7 +23,7 @@
 ### :heavy_check_mark: - https://brasilapi.com.br/api/cep/v2/${cep};
 
 
-## :construction: Funcionalidades :construction:
+## :hammer: Funcionalidades :hammer:
 
 ### Quando o usuário digitar o que quiser na barra de pesquisa, a aplicação vai fazer uma requisição a API do mercado livre, trazendo assim todos os produtos relacionados.
 ### Além disso, o usuário também pode digitar o seu CEP. Ao digitar, a aplicação vai fazer uma requisição a 2 API's, a que responder primeiro será usada, mostrando a rua, bairro, cidade e estado respectivamente logo a baixo do botão 'Buscar CEP'
