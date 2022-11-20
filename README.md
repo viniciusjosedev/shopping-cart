@@ -8,7 +8,7 @@
 ## Bradges
 
 <p align='left'>
-<img src='https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-success' width='250px'></img>
+<img src='https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-success' width='150'></img>
 </p>
 
 ## Descrição do projeto
