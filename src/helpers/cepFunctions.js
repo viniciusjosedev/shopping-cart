@@ -9,18 +9,17 @@ export const searchCep = async () => {
   try {
     const input = document.getElementsByClassName('cep-input')[0].value;
     const resultado = await getAddress(input);
-    if (resultado.url === `https://cep.awesomeapi.com.br/json/${input}`) {
-      const { address, district, city, state } = await resultado.json();
-      if (!address) throw new Error('CEP não encontrado');
+    const objeto = await resultado.json();
+    if (objeto.address !== undefined) {
+      const { address, district, city, state } = objeto;
       tagSpan.innerText = `${address} - ${district} - ${city} - ${state}`;
       return;
-    } if (resultado.url === `https://brasilapi.com.br/api/cep/v2/${input}`) {
-      const { street, neighborhood, city, state } = await resultado.json();
-      if (!street) throw new Error('CEP não encontrado');
+    } if (objeto.street !== undefined) {
+      const { street, neighborhood, city, state } = objetjo;
       tagSpan.innerText = `${street} - ${neighborhood} - ${city} - ${state}`;
       return;
-    }
-  } catch (error) {
-    tagSpan.innerText = error.message;
+    } throw new Error('CEP não encontrado');
+  } catch {
+    tagSpan.innerText = 'CEP não encontrado';
   }
 };
