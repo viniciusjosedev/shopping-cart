@@ -1,3 +1,3 @@
-<center> <h1>Shopping Cart</h1></center>
+<center> teste</center>
 
 ## ![imagem de carrinho de compras](./src/imgs/logo.png)
