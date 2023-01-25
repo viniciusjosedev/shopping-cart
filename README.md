@@ -13,7 +13,7 @@
 
 ## Descrição do projeto
 
-### Projeto realizado mediante a necessiade da prática em conceitos inicialmente abordados de forma teórica.
+### Projeto realizado mediante a necessidade da prática em conceitos inicialmente abordados de forma teórica.
 ### Neste projeto em específico, pratiquei a construção de testes assíncronos com o jest.
 ### Além disso,pratiquei requisições para API's, junto com isso, veio a necessidade de tratar essas requisições como uma Promise e então encaminhar os resultados para a tela do usuário.
 ### API's usadas: 
