@@ -14,7 +14,7 @@
 ## Descrição do projeto
 
 ### Projeto realizado mediante a necessidade da prática em conceitos inicialmente abordados de forma teórica.
-### Neste projeto em específico, pratiquei a necessidade de testes
+### Neste projeto em específico, pratiquei ainda mais a forma de se desenvolver uma aplicação em React. Usando componentes de classes, 
 ### Além disso,pratiquei requisições para API's, junto com isso, veio a necessidade de tratar essas requisições como uma Promise e então encaminhar os resultados para a tela do usuário.
 ### API's usadas: 
 
