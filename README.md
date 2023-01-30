@@ -1,3 +1,10 @@
+<h1 align='center' id='Título-e-Imagem-de-capa'>:money_with_wings: Shopping Cart :money_with_wings: </h1>
+
+<p align='center'>
+<img src='./src/imgs/logo.png'></img>
+</p>
+
+
 ## Bradges
 
 <p align='left'>
