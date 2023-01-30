@@ -30,10 +30,9 @@
 
 ## :computer: Tecnologias/Linguagens utilizadas :computer:
 
-### :heavy_check_mark: - HTML5, CSS6 e JS6
-### :heavy_check_mark: - Jest e Vite.
+### Tecnologias: HTML5, CSS6 e JS6 :heavy_check_mark:
+### Bibliotecas: Jest e Vite :heavy_check_mark:
 
 ## Pessoas Desenvolvedoras do Projeto.
-### Projeto realizado em conjunto com a empresa de tecnologia trybe, que foi a reponsável por fazer toda a estrutura dos arquivos do projeto, incluindo a estrutura básica da identação e estilização da página.
-### Deixando assim, um ambiente saudável para que eu pudeste desenvolver todos os testes assíncronos das funções fetchProduct.js e fetchProductsList.js, além de também desenvolver as mesmas.
-### Partes das criações das funcionalidadee de adicionar e excluir produtos também são de minha responsabilidade juntamente com toda a estrutura buscar, tratar e printar os dados de todas as API's do projeto.
+### Projeto realizado em conjunto com a empresa de tecnologia trybe, que foi a reponsável por fazer toda a estrutura dos arquivos do projeto, incluindo a estrutura básica da identação e estilização da página. Deixando assim, um ambiente saudável para que eu pudeste desenvolver todos os testes assíncronos das funções fetchProduct.js e fetchProductsList.js, além de também desenvolver as mesmas.
+### Partes das criações das funcionalidade de adicionar e excluir produtos também são de minha responsabilidade juntamente com toda a estrutura buscar, tratar e printar os dados de todas as API's do projeto.
